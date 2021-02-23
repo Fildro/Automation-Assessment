@@ -14,10 +14,11 @@ How to Run:
 2. Open the Project
 3. Open a Terminal (In the Project Path)
 
-First Customer Automation Cases:
-dotnet test --filter TestCategory=Customer
 
-UI Automation Cases
+Task 1 - UI Automated test using Selenium WebDriver
+ dotnet test --filter TestCategory=Customer
+
+Task 2 - API Automated test using
 1) // 1 - Get each country (US, DE and GB) individually and validate the response
  dotnet test --filter TestCategory=APIlist
 
