@@ -1,0 +1,5 @@
+C:\Users\Fildro\Desktop\CodeTest\obj\Debug\net5.0\CodeTest.csprojAssemblyReference.cache
+C:\Users\Fildro\Desktop\CodeTest\obj\Debug\net5.0\CodeTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fildro\Desktop\CodeTest\obj\Debug\net5.0\CodeTest.AssemblyInfoInputs.cache
+C:\Users\Fildro\Desktop\CodeTest\obj\Debug\net5.0\CodeTest.AssemblyInfo.cs
+C:\Users\Fildro\Desktop\CodeTest\obj\Debug\net5.0\CodeTest.csproj.CoreCompileInputs.cache
