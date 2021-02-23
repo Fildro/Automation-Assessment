@@ -15,10 +15,10 @@ How to Run:
 3. Open a Terminal (In the Project Path)
 
 
-Task 1 - UI Automated test using Selenium WebDriver (TestCustomer.cs)
+Task 1 - UI Automated test using Selenium WebDriver (Test/TestCustomer.cs)
  dotnet test --filter TestCategory=Customer
 
-Task 2 - API Automated test using (TestAPI.cs)
+Task 2 - API Automated test using (Test/TestAPI.cs)
 1) // 1 - Get each country (US, DE and GB) individually and validate the response
  dotnet test --filter TestCategory=APIlist
 
