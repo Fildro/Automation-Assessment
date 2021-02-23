@@ -9,15 +9,17 @@
       "Test/1.0.0": {
         "dependencies": {
           "Bogus": "33.0.1",
+          "DotNetSeleniumExtras.PageObjects": "3.11.0",
+          "DotNetSeleniumExtras.PageObjects.Core": "3.12.0",
+          "DotNetSeleniumExtras.WaitHelpers": "3.11.0",
           "EntityFramework": "6.4.4",
           "Microsoft.NET.Test.Sdk": "16.8.3",
           "NUnit": "3.12.0",
           "NUnit3TestAdapter": "3.16.1",
           "RestSharp": "106.11.7",
-          "Selenium.WebDriver": "4.0.0-beta1",
+          "Selenium.Support": "3.141.0",
+          "Selenium.WebDriver": "3.141.0",
           "Selenium.WebDriver.ChromeDriver": "88.0.4324.9600",
-          "Selenium.WebDriver.WaitExtensions": "2.0.0",
-          "SeleniumExtras.WaitHelpers": "1.0.1",
           "xunit": "2.4.1",
           "xunit.runner.visualstudio": "2.4.3"
         },
@@ -30,6 +32,34 @@
           "lib/netstandard2.0/Bogus.dll": {
             "assemblyVersion": "33.0.1.0",
             "fileVersion": "33.0.1.0"
+          }
+        }
+      },
+      "DotNetSeleniumExtras.PageObjects/3.11.0": {
+        "dependencies": {
+          "Selenium.WebDriver": "3.141.0"
+        }
+      },
+      "DotNetSeleniumExtras.PageObjects.Core/3.12.0": {
+        "dependencies": {
+          "Selenium.WebDriver": "3.141.0",
+          "System.Reflection.DispatchProxy": "4.4.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SeleniumExtras.PageObjects.dll": {
+            "assemblyVersion": "3.12.0.0",
+            "fileVersion": "3.12.0.0"
+          }
+        }
+      },
+      "DotNetSeleniumExtras.WaitHelpers/3.11.0": {
+        "dependencies": {
+          "Selenium.WebDriver": "3.141.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SeleniumExtras.WaitHelpers.dll": {
+            "assemblyVersion": "3.11.0.0",
+            "fileVersion": "3.11.0.0"
           }
         }
       },
@@ -191,7 +221,7 @@
       "Microsoft.TestPlatform.TestHost/16.8.3": {
         "dependencies": {
           "Microsoft.TestPlatform.ObjectModel": "16.8.3",
-          "Newtonsoft.Json": "12.0.3"
+          "Newtonsoft.Json": "10.0.3"
         },
         "runtime": {
           "lib/netcoreapp2.1/Microsoft.TestPlatform.CommunicationUtilities.dll": {
@@ -372,11 +402,19 @@
           "Microsoft.NETCore.Platforms": "3.1.0"
         }
       },
-      "Newtonsoft.Json/12.0.3": {
+      "Newtonsoft.Json/10.0.3": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "NETStandard.Library": "2.0.0",
+          "System.ComponentModel.TypeConverter": "4.3.0",
+          "System.Runtime.Serialization.Formatters": "4.3.0",
+          "System.Runtime.Serialization.Primitives": "4.3.0",
+          "System.Xml.XmlDocument": "4.3.0"
+        },
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
-            "assemblyVersion": "12.0.0.0",
-            "fileVersion": "12.0.3.23909"
+          "lib/netstandard1.3/Newtonsoft.Json.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.3.21018"
           }
         }
       },
@@ -462,7 +500,7 @@
       },
       "Selenium.Support/3.141.0": {
         "dependencies": {
-          "Selenium.WebDriver": "4.0.0-beta1"
+          "Selenium.WebDriver": "3.141.0"
         },
         "runtime": {
           "lib/netstandard2.0/WebDriver.Support.dll": {
@@ -471,41 +509,18 @@
           }
         }
       },
-      "Selenium.WebDriver/4.0.0-beta1": {
+      "Selenium.WebDriver/3.141.0": {
         "dependencies": {
-          "Newtonsoft.Json": "12.0.3"
+          "Newtonsoft.Json": "10.0.3"
         },
         "runtime": {
-          "lib/net5.0/WebDriver.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.0.0.0"
+          "lib/netstandard2.0/WebDriver.dll": {
+            "assemblyVersion": "3.141.0.0",
+            "fileVersion": "3.141.0.0"
           }
         }
       },
       "Selenium.WebDriver.ChromeDriver/88.0.4324.9600": {},
-      "Selenium.WebDriver.WaitExtensions/2.0.0": {
-        "dependencies": {
-          "Selenium.Support": "3.141.0",
-          "Selenium.WebDriver": "4.0.0-beta1"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Selenium.WebDriver.WaitExtensions.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "SeleniumExtras.WaitHelpers/1.0.1": {
-        "dependencies": {
-          "Selenium.WebDriver": "4.0.0-beta1"
-        },
-        "runtime": {
-          "lib/netstandard2.1/SeleniumExtras.WaitHelpers.dll": {
-            "assemblyVersion": "1.0.1.0",
-            "fileVersion": "1.0.1.0"
-          }
-        }
-      },
       "System.AppContext/4.1.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -745,6 +760,7 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "System.Reflection.DispatchProxy/4.4.0": {},
       "System.Reflection.Extensions/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -815,6 +831,21 @@
           "System.Runtime.InteropServices": "4.3.0",
           "System.Threading": "4.3.0",
           "runtime.native.System": "4.3.0"
+        }
+      },
+      "System.Runtime.Serialization.Formatters/4.3.0": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Serialization.Primitives": "4.3.0"
+        }
+      },
+      "System.Runtime.Serialization.Primitives/4.3.0": {
+        "dependencies": {
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0"
         }
       },
       "System.Security.AccessControl/4.7.0": {
@@ -1061,6 +1092,27 @@
       "path": "bogus/33.0.1",
       "hashPath": "bogus.33.0.1.nupkg.sha512"
     },
+    "DotNetSeleniumExtras.PageObjects/3.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DJCLQ3beq1fzqpeQ5jTZwDqmzbOD2Xxsb/jCyShYam88CNwGGn5aBBqu4LVSj0sy0Ai76OauQQncYlC48VvQUQ==",
+      "path": "dotnetseleniumextras.pageobjects/3.11.0",
+      "hashPath": "dotnetseleniumextras.pageobjects.3.11.0.nupkg.sha512"
+    },
+    "DotNetSeleniumExtras.PageObjects.Core/3.12.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FcwAc221M6DIzy1yiYfed4FfoS6tZsI/Kkb1qGl8ChP9UELMi00VVMrHE+VsOtu9q5BvkoqyD4uXlm/5KJX3/Q==",
+      "path": "dotnetseleniumextras.pageobjects.core/3.12.0",
+      "hashPath": "dotnetseleniumextras.pageobjects.core.3.12.0.nupkg.sha512"
+    },
+    "DotNetSeleniumExtras.WaitHelpers/3.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xc6jVVl5ymgk3ZNWnC/KHxkEup1QpnwYbrwF+NQoCOGERsD8YMlLwmsX4lGhLXCLo/YQTRTIwlKCN9E/doGUNg==",
+      "path": "dotnetseleniumextras.waithelpers/3.11.0",
+      "hashPath": "dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512"
+    },
     "EntityFramework/6.4.4": {
       "type": "package",
       "serviceable": true,
@@ -1152,12 +1204,12 @@
       "path": "netstandard.library/2.0.0",
       "hashPath": "netstandard.library.2.0.0.nupkg.sha512"
     },
-    "Newtonsoft.Json/12.0.3": {
+    "Newtonsoft.Json/10.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
-      "path": "newtonsoft.json/12.0.3",
-      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+      "sha512": "sha512-hSXaFmh7hNCuEoC4XNY5DrRkLDzYHqPx/Ik23R4J86Z7PE/Y6YidhG602dFVdLBRSdG6xp9NabH3dXpcoxWvww==",
+      "path": "newtonsoft.json/10.0.3",
+      "hashPath": "newtonsoft.json.10.0.3.nupkg.sha512"
     },
     "NuGet.Frameworks/5.0.0": {
       "type": "package",
@@ -1229,12 +1281,12 @@
       "path": "selenium.support/3.141.0",
       "hashPath": "selenium.support.3.141.0.nupkg.sha512"
     },
-    "Selenium.WebDriver/4.0.0-beta1": {
+    "Selenium.WebDriver/3.141.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Bb6dhAFx4R3e09dv7AqY96rkYD2d7tcWvC3Knb45H0UlFu2nPkaqcPWAu8096FJYfqI67OV5KKo3MyvAGpMKpw==",
-      "path": "selenium.webdriver/4.0.0-beta1",
-      "hashPath": "selenium.webdriver.4.0.0-beta1.nupkg.sha512"
+      "sha512": "sha512-wPqzXO3f79DzqauTZSzLMKiaBCN0Z2Mv7KvWP+hnV6EL88zh/pJJnFtdIR1X5wa3hsTOpF/bBJs45rz7kArsiA==",
+      "path": "selenium.webdriver/3.141.0",
+      "hashPath": "selenium.webdriver.3.141.0.nupkg.sha512"
     },
     "Selenium.WebDriver.ChromeDriver/88.0.4324.9600": {
       "type": "package",
@@ -1242,20 +1294,6 @@
       "sha512": "sha512-tFYi/cACBE+lq+aQMMCFDCZChkq7jQHm3yNh040r2WeuI+WBg3MDna9o+8x6d+inxdbCXDABnifqKb4CynRQLQ==",
       "path": "selenium.webdriver.chromedriver/88.0.4324.9600",
       "hashPath": "selenium.webdriver.chromedriver.88.0.4324.9600.nupkg.sha512"
-    },
-    "Selenium.WebDriver.WaitExtensions/2.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-ktDBjrUa45IuPNvbYsLALZjLJE26Nj17gdO9sk5whUWsszwRspNbiBMqmCfQwBwGRjZzrw15IriypnX4oIS0HA==",
-      "path": "selenium.webdriver.waitextensions/2.0.0",
-      "hashPath": "selenium.webdriver.waitextensions.2.0.0.nupkg.sha512"
-    },
-    "SeleniumExtras.WaitHelpers/1.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-PiokVClCVy9GPcNObJTVbAnut9fFNxlAO5UMKb4SJEwdeAJwk4Cz9ihdogF46dXkwWpktEjZ0hUKiykwj0baiQ==",
-      "path": "seleniumextras.waithelpers/1.0.1",
-      "hashPath": "seleniumextras.waithelpers.1.0.1.nupkg.sha512"
     },
     "System.AppContext/4.1.0": {
       "type": "package",
@@ -1411,6 +1449,13 @@
       "path": "system.reflection/4.3.0",
       "hashPath": "system.reflection.4.3.0.nupkg.sha512"
     },
+    "System.Reflection.DispatchProxy/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xK6JE0mpsBD+T0qu3V6dmVRa06PxAvIIM/zSjouqP7Sk6X+FQj+9XFRz9GmZk9aJGMU1LX6AgTZIlsYZ64QKsw==",
+      "path": "system.reflection.dispatchproxy/4.4.0",
+      "hashPath": "system.reflection.dispatchproxy.4.4.0.nupkg.sha512"
+    },
     "System.Reflection.Extensions/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1480,6 +1525,20 @@
       "sha512": "sha512-cbz4YJMqRDR7oLeMRbdYv7mYzc++17lNhScCX0goO2XpGWdvAt60CGN+FHdePUEHCe/Jy9jUlvNAiNdM+7jsOw==",
       "path": "system.runtime.interopservices.runtimeinformation/4.3.0",
       "hashPath": "system.runtime.interopservices.runtimeinformation.4.3.0.nupkg.sha512"
+    },
+    "System.Runtime.Serialization.Formatters/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KT591AkTNFOTbhZlaeMVvfax3RqhH1EJlcwF50Wm7sfnBLuHiOeZRRKrr1ns3NESkM20KPZ5Ol/ueMq5vg4QoQ==",
+      "path": "system.runtime.serialization.formatters/4.3.0",
+      "hashPath": "system.runtime.serialization.formatters.4.3.0.nupkg.sha512"
+    },
+    "System.Runtime.Serialization.Primitives/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Wz+0KOukJGAlXjtKr+5Xpuxf8+c8739RI1C+A2BoQZT+wMCCoMDDdO8/4IRHfaVINqL78GO8dW8G2lW/e45Mcw==",
+      "path": "system.runtime.serialization.primitives/4.3.0",
+      "hashPath": "system.runtime.serialization.primitives.4.3.0.nupkg.sha512"
     },
     "System.Security.AccessControl/4.7.0": {
       "type": "package",

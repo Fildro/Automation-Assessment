@@ -23,7 +23,6 @@ namespace Codetest{
         public string Information {get;set;}
         public string HomePhone{get;set;}
         public string MobilePhone {get;set;}
-
     }
 
 }
